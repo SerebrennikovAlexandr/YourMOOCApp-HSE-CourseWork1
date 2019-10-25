@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:YourMOOC"
+             x:Class="YourMOOC.MainPage">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="PageName"
+               Grid.Row="0"
+               Text="Выберите онлайн-курс!"
+               FontSize="Large"
+               FontAttributes="Bold"
+               TextColor="Black"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="FillAndExpand"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"/>
+
+        <StackLayout Orientation="Horizontal" Grid.Row="1">
+
+            <Entry x:Name="SearchEntry"
+                   Placeholder="Введите запрос"
+                   PlaceholderColor="LightGray"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   Margin="10, 5, 5, 5"/>
+
+            <Image x:Name="SearchImage"
+                   Source="Resources/search.png"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="FillAndExpand"
+                   Margin="5, 5, 10, 5"
+                   HeightRequest="30">
+
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer x:Name="SearchCourses"
+                                          Tapped="SearchCourses_Tapped"/>
+                </Image.GestureRecognizers>
+
+            </Image>
+
+        </StackLayout>
+
+        <Picker x:Name="TagsPicker"
+                Grid.Row="2"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                SelectedIndexChanged="TagsPicker_SelectedIndexChanged"
+                Title="Выберите категорию"
+                Margin="10, 10, 10, 10">
+
+            <Picker.Items>
+                <x:String>programming</x:String>
+                <x:String>maths</x:String>
+                <x:String>science</x:String>
+                <x:String>data</x:String>
+                <x:String>languages</x:String>
+                <x:String>english</x:String>
+            </Picker.Items>
+
+        </Picker>
+
+        <ListView x:Name="CoursesList"
+                  Grid.Row="3"
+                  HorizontalOptions="FillAndExpand"
+                  VerticalOptions="FillAndExpand"
+                  SeparatorVisibility="None"
+                  IsPullToRefreshEnabled="True"
+                  SeparatorColor="White"
+                  SelectionMode="None"
+                  Refreshing="Results_Refreshing"
+                  Margin="10, 10, 10, 10"
+                  RowHeight="250">
+
+        </ListView>
+
+    </Grid>
+
+</ContentPage>

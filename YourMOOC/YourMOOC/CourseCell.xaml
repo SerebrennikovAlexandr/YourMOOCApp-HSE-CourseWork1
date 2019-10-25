@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ViewCell xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YourMOOC.CourseCell">
+
+    <Frame CornerRadius="10"
+           BorderColor="LightGray"
+           Margin="0, 0, 0, 10"
+           Padding="0"
+           BackgroundColor="{Binding Color}">
+
+        <Grid RowSpacing="0"
+              ColumnSpacing="0">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.33*"/>
+                <ColumnDefinition Width="0.67*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image x:Name="CourseImage"
+                   Grid.Column="0"
+                   Grid.Row="0"
+                   Grid.RowSpan="5"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="FillAndExpand"
+                   Margin="15, 25, 5, 25"
+                   Source="{Binding Picture}"/>
+
+            <Label x:Name="CourseName"
+                   Grid.Column="1"
+                   Grid.Row="0"
+                   Text="{Binding Name}"
+                   FontSize="Default"
+                   TextColor="Black"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Start"
+                   VerticalTextAlignment="Center"
+                   Margin="10, 5, 10, 10"/>
+
+            <Label x:Name="CourseCreators"
+                   Grid.Column="1"
+                   Grid.Row="1"
+                   Text="{Binding Source}"
+                   FontSize="Default"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Start"
+                   VerticalTextAlignment="Center"
+                   Margin="10, 5, 10, 10"/>
+
+            <Label x:Name="CourseLink"
+                   Grid.Column="1"
+                   Grid.Row="2"
+                   Text="{Binding SourсeRef}"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Start"
+                   VerticalTextAlignment="Center"
+                   Margin="10, 5, 10, 10">
+
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer x:Name="OpenLink"
+                                          Tapped="OpenLink_Tapped"/>
+                </Label.GestureRecognizers>
+
+            </Label>
+
+            <Label x:Name="CourseRating"
+                   Grid.Column="1"
+                   Grid.Row="3"
+                   Text="{Binding Rating}"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Start"
+                   VerticalTextAlignment="Center"
+                   Margin="10, 5, 10, 10"/>
+
+            <Label x:Name="CourseUsers"
+                   Grid.Column="1"
+                   Grid.Row="4"
+                   Text="{Binding EnrolledPeopleAmount}"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Start"
+                   VerticalTextAlignment="Center"
+                   Margin="10, 5, 10, 10"/>
+
+        </Grid>
+
+    </Frame>
+
+</ViewCell>

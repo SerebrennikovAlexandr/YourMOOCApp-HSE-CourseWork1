@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YourMOOC.Android", "YourMOOC\YourMOOC.Android\YourMOOC.Android.csproj", "{8E92437A-E82A-48E3-8AB3-0B63824E7B4D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YourMOOC", "YourMOOC\YourMOOC\YourMOOC.csproj", "{226B5426-997C-4827-85C6-EF8598C9C92F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MOOCParsersLib", "MOOCParsersLib\MOOCParsersLib.csproj", "{397820DC-4A7E-486D-B011-7335FC51B376}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E92437A-E82A-48E3-8AB3-0B63824E7B4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E92437A-E82A-48E3-8AB3-0B63824E7B4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E92437A-E82A-48E3-8AB3-0B63824E7B4D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8E92437A-E82A-48E3-8AB3-0B63824E7B4D}.Debug|x86.ActiveCfg = Debug|x86
+		{8E92437A-E82A-48E3-8AB3-0B63824E7B4D}.Debug|x86.Build.0 = Debug|x86
+		{8E92437A-E82A-48E3-8AB3-0B63824E7B4D}.Debug|x86.Deploy.0 = Debug|x86
+		{8E92437A-E82A-48E3-8AB3-0B63824E7B4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E92437A-E82A-48E3-8AB3-0B63824E7B4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E92437A-E82A-48E3-8AB3-0B63824E7B4D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8E92437A-E82A-48E3-8AB3-0B63824E7B4D}.Release|x86.ActiveCfg = Release|x86
+		{8E92437A-E82A-48E3-8AB3-0B63824E7B4D}.Release|x86.Build.0 = Release|x86
+		{8E92437A-E82A-48E3-8AB3-0B63824E7B4D}.Release|x86.Deploy.0 = Release|x86
+		{226B5426-997C-4827-85C6-EF8598C9C92F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{226B5426-997C-4827-85C6-EF8598C9C92F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{226B5426-997C-4827-85C6-EF8598C9C92F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{226B5426-997C-4827-85C6-EF8598C9C92F}.Debug|x86.ActiveCfg = Debug|x86
+		{226B5426-997C-4827-85C6-EF8598C9C92F}.Debug|x86.Build.0 = Debug|x86
+		{226B5426-997C-4827-85C6-EF8598C9C92F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{226B5426-997C-4827-85C6-EF8598C9C92F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{226B5426-997C-4827-85C6-EF8598C9C92F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{226B5426-997C-4827-85C6-EF8598C9C92F}.Release|x86.ActiveCfg = Release|x86
+		{226B5426-997C-4827-85C6-EF8598C9C92F}.Release|x86.Build.0 = Release|x86
+		{397820DC-4A7E-486D-B011-7335FC51B376}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{397820DC-4A7E-486D-B011-7335FC51B376}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{397820DC-4A7E-486D-B011-7335FC51B376}.Debug|x86.ActiveCfg = Debug|x86
+		{397820DC-4A7E-486D-B011-7335FC51B376}.Debug|x86.Build.0 = Debug|x86
+		{397820DC-4A7E-486D-B011-7335FC51B376}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{397820DC-4A7E-486D-B011-7335FC51B376}.Release|Any CPU.Build.0 = Release|Any CPU
+		{397820DC-4A7E-486D-B011-7335FC51B376}.Release|x86.ActiveCfg = Release|x86
+		{397820DC-4A7E-486D-B011-7335FC51B376}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5A86280-6BB9-4BDA-AF62-42DDF7613323}
+	EndGlobalSection
+EndGlobal
